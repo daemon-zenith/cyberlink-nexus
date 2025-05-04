@@ -71,7 +71,7 @@ const Home: React.FC = () => {
                     transition={{ duration: 0.8, delay: 1.5 }}
                     className="text-gray-300 text-lg mb-8"
                   >
-                    We handle leads, support, and workflows, while you do what you do best.
+                    We handle leads, support, and workflows, while you do what you do best
                   </motion.p>
 
                   <motion.div

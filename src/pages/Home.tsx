@@ -59,7 +59,7 @@ const Home: React.FC = () => {
               {heroInView && (
                 <>
                   <TypewriterHeading 
-                    text="AI That Works 24/7, So You Don’t Have To."
+                    text="AI That Works 24/7, So You Don’t Have To"
                     className="text-4xl md:text-5xl font-space font-bold mb-6 text-white"
                     delay={50}
                     cursorColor="blue"
@@ -71,7 +71,7 @@ const Home: React.FC = () => {
                     transition={{ duration: 0.8, delay: 1.5 }}
                     className="text-gray-300 text-lg mb-8"
                   >
-                    We handle leads, support, and workflows, while you do what you do best.
+                    We handle leads, support, and workflows, while you do what you do best
                   </motion.p>
 
                   <motion.div
@@ -132,7 +132,7 @@ const Home: React.FC = () => {
                 You’re missing out on leads, failing to support your customers, and stuck in endless manual work. Top businesses are automating to dominate their markets. Why are you falling behind?
               </p>
               <p className={`text-white text-lg mb-8 ${agitateInView ? 'matrix-flicker' : 'opacity-0'}`} style={{ animationDelay: '500ms' }}>
-                CyberLink Nexus deploys AI systems that think, respond, and automate for you 24/7.
+                CyberLink Nexus deploys AI systems that think, respond, and automate for you 24/7
               </p>
               <div className={`${agitateInView ? 'matrix-flicker' : 'opacity-0'}`} style={{ animationDelay: '750ms' }}>
                 <motion.div className="inline-block rounded-lg p-2 bg-gradient-to-r from-cyber-green-400/20 to-cyber-green-400/20 hover:from-cyber-green-400/30 hover:to-cyber-green-400/30 transition-all duration-300">
