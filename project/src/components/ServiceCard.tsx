@@ -33,17 +33,17 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 
   return (
     <div 
-      className="bg-cyber-dark p-6 rounded-lg border border-gray-800 hover:border-cyber-blue-400/50 transition-all duration-500 group"
+      className="bg-cyber-dark p-6 rounded-lg border border-gray-800 hover:border-cyber-blue-400/50 transition-all duration-500 group h-[280px] flex flex-col" /* Changed to h-[280px] for fixed height */
       style={{ animationDelay: `${delay}ms` }}
     >
       <div className="w-12 h-12 rounded-full flex items-center justify-center bg-black border border-cyber-blue-400/30 mb-4 group-hover:border-cyber-blue-400 transition-all duration-300">
         <Icon className="w-6 h-6 text-cyber-blue-400" />
       </div>
       <h3 className="text-xl font-space mb-2 text-white group-hover:neon-text-blue transition-all duration-300">{title}</h3>
-      <p className="text-gray-400 mb-4">{description}</p>
+      <p className="text-gray-400 mb-4 flex-grow">{description}</p>
       <button 
         onClick={() => handleNavigateWithTop('/contact')}
-        className="inline-block text-cyber-blue-400 hover:neon-text-blue text-sm transition-all duration-300"
+        className="inline-block text-cyber-blue-400 hover:neon-text-blue text-sm transition-all duration-300 mt-auto"
       >
         Get Started →
       </button>

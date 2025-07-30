@@ -4,9 +4,6 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { 
   Users, 
-  Phone, 
-  MessageSquare, 
-  Calendar, 
   Globe, 
   Workflow 
 } from 'lucide-react';
@@ -168,9 +165,13 @@ const Home: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[{ title: "Lead Capture & CRM Bots", description: "Capture and route leads automatically to your sales pipeline.", icon: Users, delay: 300 }, { title: "AI-Powered Phone Dialers", description: "Custom voice workflows to follow up with leads, schedule appointments, and confirm details.", icon: Phone, delay: 400 }, { title: "Customer Support Chatbots", description: "24/7 AI agents that answer FAQs, handle tickets, and qualify customers.", icon: MessageSquare, delay: 500 }, { title: "Appointment Scheduling Systems", description: "Automated booking workflows integrated with your calendar.", icon: Calendar, delay: 600 }, { title: "Custom Website Builds", description: "Fast, responsive, AI-integrated websites tailored to your business needs.", icon: Globe, delay: 700 }, { title: "Business Workflow Automation", description: "From email sequences to task automation — powered by AI logic.", icon: Workflow, delay: 800 }].map((service, index) => (
+            {[
+              { title: "AI-Powered Chatbots", description: "24/7 AI agents for lead capture, CRM integration, customer support, and FAQs to streamline your business.", icon: Users, delay: 300 },
+              { title: "Business Automation Solutions", description: "Automated scheduling, email sequences, and task management powered by AI logic.", icon: Workflow, delay: 400 },
+              { title: "Custom Website Development", description: "Fast, responsive, AI-integrated websites tailored to your needs.", icon: Globe, delay: 500 }
+            ].map((service, index) => (
               <div key={index} className={`${servicesInView ? 'glitch-pop' : 'opacity-0'}`} style={{ animationDelay: `${service.delay}ms` }}>
-                <ServiceCard title={service.title} description={service.description} icon={service.icon} />
+                <ServiceCard title={service.title} description={service.description} icon={service.icon} className="h-60" /> {/* Increased to h-60 (240px) */}
               </div>
             ))}
           </div>

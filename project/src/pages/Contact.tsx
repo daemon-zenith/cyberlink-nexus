@@ -118,13 +118,9 @@ const Contact = () => {
                 {...register('service', { required: true })}
               >
                 <option value="">Select a service</option>
-                <option value="Lead Capture & CRM Bots">Lead Capture & CRM Bots</option>
-                <option value="AI-Powered Phone Dialers">AI-Powered Phone Dialers</option>
-                <option value="Customer Support Chatbots">Customer Support Chatbots</option>
-                <option value="Appointment Scheduling">Appointment Scheduling</option>
-                <option value="Custom Website Builds">Custom Website Builds</option>
-                <option value="Business Workflow Automation">Business Workflow Automation</option>
-                <option value="Multiple Services">Multiple Services</option>
+                <option value="AI-Powered Chatbots">AI-Powered Chatbots</option>
+                <option value="Business Automation Solutions">Business Automation Solutions</option>
+                <option value="Custom Website Development">Custom Website Development</option>
               </select>
               {errors.service && <p className="mt-1 text-red-500 text-sm">Please select a service</p>}
             </div>
